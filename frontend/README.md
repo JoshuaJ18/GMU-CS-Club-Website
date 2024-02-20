@@ -1,0 +1,1 @@
+# This is the readme for the front end. The frontend uses ReactJS and Node.js
