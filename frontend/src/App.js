@@ -1,3 +1,4 @@
+import "./App.css";
 import React from "react";
 import Navbar from "./navbar";
 import {
@@ -21,12 +22,16 @@ function App() {
           element={
           <>
             <Home />
+            <About />
             <Events />
             <Join />
-            <About />
             <Photos />
           </>
           } 
+        />
+        <Route
+          path="/about"
+          element={<About />}
         />
         <Route 
           path="/events" 
@@ -35,10 +40,6 @@ function App() {
         <Route
           path="/join"
           element={<Join />}
-        />
-        <Route
-          path="/about"
-          element={<About />}
         />
         <Route
           path="/photos"
