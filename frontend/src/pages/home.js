@@ -1,11 +1,14 @@
 import './../pages_css/home.css';
+import Container from "@mui/material/Container"; 
 
-function home() {
+function Home() {
   return (
-    <div classname="container">
-      <p>This is the home page</p>
-    </div>
+    <Container className="home-container">
+      <div className="gmu-cs-club-title">
+        <h1>George Mason University <br></br> Computer Science Club</h1>
+      </div>
+    </Container>
   );
 }
 
-export default home;
+export default Home;

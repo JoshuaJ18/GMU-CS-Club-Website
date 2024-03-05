@@ -1,0 +1,15 @@
+.about-container {
+    display: flex;
+    position: relative;
+    margin-top: 2vh;
+    margin-bottom: 50vh;
+    border: 5px solid black;
+}
+
+.function-return {
+    margin-left: 5vw;
+}
+
+.return-text {
+    margin-left: 10vw;
+}

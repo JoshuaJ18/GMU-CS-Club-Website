@@ -1,0 +1,11 @@
+.join-container {
+    display: flex;
+    position: relative;
+    margin-top: 2vh;
+    margin-bottom: 50vh;
+    border: 5px solid black;
+}
+
+.code-block {
+    margin-left: 5vw;
+}

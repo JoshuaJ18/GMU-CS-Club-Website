@@ -1,0 +1,20 @@
+.events-container {
+    display: flex;
+    position: relative;
+    margin-top: 2vh;
+    margin-bottom: 50vh;
+    border: 5px solid black;
+}
+
+
+.events-json {
+    color: black;
+}
+
+.event {
+    margin-left: 5vw;
+}
+
+.event-info {
+    margin-left: 10vw;
+}
