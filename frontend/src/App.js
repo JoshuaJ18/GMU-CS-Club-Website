@@ -1,6 +1,5 @@
 import "./App.css";
 import React from "react";
-import Navbar from "./navbar";
 import {
   BrowserRouter,
   Routes,
@@ -15,7 +14,6 @@ import Photos from "./pages/photos.js";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
         <Route 
           path="/"   
