@@ -25,6 +25,9 @@ function Navbar() {
           </ul>
         </div>
       </div>
+
+      {/* We have to use jsx styling with this because we need access to the hamburgerOpen variable */}
+      
       <style jsx>{`
         .navbar {
           display: inline-block;
