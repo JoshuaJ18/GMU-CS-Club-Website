@@ -1,0 +1,7 @@
+.photo-container {
+    display: block;
+    position: relative;
+    margin-top: 30vh;
+    margin-bottom: 70vh;
+    border: 5px solid black;
+}

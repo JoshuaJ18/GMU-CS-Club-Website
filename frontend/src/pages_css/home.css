@@ -1,0 +1,17 @@
+.home-container {
+    display: block;
+    position: relative;
+    margin-top: 30vh;
+    margin-bottom: 70vh;
+    border: 5px solid black;
+}
+
+.gmu-cs-club-title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.gmu-cs-club-title h1 {
+    font-size: 6.5vw;
+}

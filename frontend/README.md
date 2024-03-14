@@ -1,73 +1,34 @@
 # This is the frontend of the GMU CS Clubs website. It was created using ReactJS and Node.js
 
+## What to do when you first clone this repo:
+1. Open up a terminal
+2. CD into the frontend folder
+3. Run this command in the terminal (must have node.js installed):
+    ```bash
+    npm i
+    ```
+4. You are all set!
 
-# Getting Started with Create React App
+## How to run the website locally for testing:
+1. First make sure you are CD'd into the frontend folder
+2. Then run the command:
+    ```bash 
+    npm start
+    ```
+3. Wait for the server to start, then go to http://localhost:3000 on any browser and you should see the website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Basic File structure:
+The src folder within the frontend folder will have everything you need for updating the website. 
 
-## Available Scripts
+If you would like to add a page to the website, create a JavaScript file in the pages folder, and then a matching
+CSS file in the pages_css folder. 
 
-In the project directory, you can run:
+Once you are done, import your new page to the App.js folder within the src folder and add it to the routes.
+A "route" is a webpage in React. So new routes are new webpages.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The index.js file is used to render the different webpages and routes. If we didn't want to use routes, we could just skip the App.js file
+and import each page into index.js and just add something like:
+```JavaScript
+<Home />
+```
+under the "React.Strictmode" tab.
