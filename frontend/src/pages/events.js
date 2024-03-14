@@ -1,11 +1,10 @@
 import './../pages_css/events.css';
 import React from 'react';
 import { eventData } from './eventDataList.js';
-import Container from "@mui/material/Container"; 
 
 function Events() {
   return (
-    <Container className="events-container">
+    <div className="events-container">
       <h1>"Events" : &#123;</h1>
       {eventData.map((event) => (
         <div className="events-json">
@@ -17,7 +16,7 @@ function Events() {
         </div>
       ))}
       <h1>&#125;</h1>
-    </Container>
+    </div>
   );
 }
 

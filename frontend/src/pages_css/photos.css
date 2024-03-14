@@ -1,7 +1,7 @@
 .photo-container {
-    display: flex;
+    display: block;
     position: relative;
-    margin-top: 2vh;
-    margin-bottom: 50vh;
+    margin-top: 30vh;
+    margin-bottom: 70vh;
     border: 5px solid black;
 }

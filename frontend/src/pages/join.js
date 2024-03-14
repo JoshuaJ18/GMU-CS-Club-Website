@@ -1,9 +1,8 @@
 import './../pages_css/join.css';
-import Container from "@mui/material/Container"; 
 
 function Join() {
   return (
-    <Container className="join-container">
+    <div className="join-container">
       <div className="condition">
         <h1>if ( isStudent(you) && wishToJoinClub(you) ) &#123;</h1>
         <div className="code-block">
@@ -11,7 +10,7 @@ function Join() {
         </div>
         <h1>&#125;</h1>
       </div>
-    </Container>
+    </div>
 
 
   );
