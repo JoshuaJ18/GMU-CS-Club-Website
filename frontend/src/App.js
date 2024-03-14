@@ -5,6 +5,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Navbar from "./navbar/navbar.js";
 import Home from "./pages/home.js";
 import About from "./pages/about.js";
 import Events from "./pages/events.js";
@@ -14,6 +15,7 @@ import Photos from "./pages/photos.js";
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route 
           path="/"   
