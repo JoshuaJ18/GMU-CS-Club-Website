@@ -10,7 +10,6 @@ function Navbar() {
     return (
         <Nav>
           <Bars />
-
           <NavMenu>
             <NavLink to="/" >
               Home
