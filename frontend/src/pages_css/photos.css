@@ -1,7 +1,64 @@
 .photo-container {
     display: block;
     position: relative;
+    min-height: 30vw;
     margin-top: 30vh;
     margin-bottom: 70vh;
     border: 5px solid black;
+}
+
+.arrow {
+    position: absolute;
+    color: black;
+    width: 3vw;
+    height: auto;
+}
+
+.arrow-left{
+    left: 0;
+    top: 50%;
+}
+
+.arrow-right {
+    right: 0;
+    top: 50%;
+}
+
+.photos {
+    display: flex;
+}
+
+.photo_1 {
+    width: 30%;
+    margin-top: 5%;
+    margin-right: 5%;
+    border: solid blue 5px
+}
+
+.photo_1 img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.photo_2 {
+    width: 30%;
+    margin-top: 5%;
+    border: solid green 5px
+}
+
+.photo_2 img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.photo_3 {
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 5%;
+    border: solid gold 5px;
+}
+
+.photo_3 img {
+    width: 100%;
+    object-fit: contain;
 }
