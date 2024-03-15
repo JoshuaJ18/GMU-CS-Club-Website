@@ -1,7 +1,7 @@
 .photo-container {
-    display: block;
+    display: flex;
     position: relative;
-    min-height: 30vw;
+    min-height: 35vw;
     margin-top: 30vh;
     margin-bottom: 70vh;
     border: 5px solid black;
@@ -30,7 +30,7 @@
 
 .photo_1 {
     width: 30%;
-    margin-top: 5%;
+    height: auto;
     margin-right: 5%;
     border: solid blue 5px
 }
@@ -42,7 +42,7 @@
 
 .photo_2 {
     width: 30%;
-    margin-top: 5%;
+    height: auto;
     border: solid green 5px
 }
 
@@ -53,7 +53,7 @@
 
 .photo_3 {
     width: 30%;
-    margin-top: 5%;
+    height: auto;
     margin-left: 5%;
     border: solid gold 5px;
 }
@@ -61,4 +61,40 @@
 .photo_3 img {
     width: 100%;
     object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+    .photo-container {
+        min-height: 100vw;
+    }
+
+    .arrow {
+        width: 8vw;
+        color: rgb(172, 187, 174);
+    }
+
+    .arrow-left{
+        left: 5px;
+        top: 45%;
+    }
+    
+    .arrow-right {
+        right: 5px;
+        top: 45%;
+    }
+
+    .photo_1 {
+        margin: auto;
+        width: 100%;
+        height: auto;
+        left: 50%;
+        top: 50%;
+    }
+
+    .photo_2 {
+        display: none;
+    }
+    .photo_3 {
+        display: none;
+    }
 }
