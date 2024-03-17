@@ -12,6 +12,7 @@
     color: black;
     width: 3vw;
     height: auto;
+    z-index: 15;
 }
 
 .arrow-left{
@@ -29,38 +30,45 @@
 }
 
 .photo_1 {
+    position: absolute;
+    left: 0%;
     width: 30%;
     height: auto;
     margin-right: 5%;
-    border: solid blue 5px
+    border: solid blue 5px;
+    z-index: 1;
 }
 
 .photo_1 img {
     width: 100%;
-    object-fit: contain;
 }
 
 .photo_2 {
-    width: 30%;
+    position: absolute;
+    left: 25%;
+    width: 50%;
     height: auto;
-    border: solid green 5px
+    border: solid green 5px;
+    z-index: 5;
 }
 
 .photo_2 img {
     width: 100%;
-    object-fit: contain;
 }
 
 .photo_3 {
+    position: absolute;
+    left: 64%;
     width: 30%;
     height: auto;
     margin-left: 5%;
     border: solid gold 5px;
+    z-index: 1;
 }
+
 
 .photo_3 img {
     width: 100%;
-    object-fit: contain;
 }
 
 @media screen and (max-width: 768px) {

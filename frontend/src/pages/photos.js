@@ -6,17 +6,17 @@ import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 function Photos() {
   const [slide, setSlide] = useState(0);
 
-  const nextSlide = () => {
+  function nextSlide() {
     setSlide(slide === photosData.length - 1 ? 0 : slide + 1);
   };
 
-  const prevSlide = () => {
+  function prevSlide() {
     setSlide(slide === 0 ? photosData.length - 1 : slide - 1);
   };
 
   return (
     <div className="photo-container">
-      <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
+      <BsArrowLeftCircleFill onClick={prevSlide()} className="arrow arrow-left" />
       <div className="photos">
         <>
           <div className="photo_1">
@@ -29,7 +29,7 @@ function Photos() {
             <img src={photosData[(slide+2) % (photosData.length)]} alt="3" />
           </div>
         </>
-        <BsArrowRightCircleFill onClick={nextSlide} className="arrow arrow-right" />
+        <BsArrowRightCircleFill onClick={nextSlide()} className="arrow arrow-right" />
       </div>
     </div>
   );
